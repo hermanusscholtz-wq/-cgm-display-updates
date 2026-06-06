@@ -1,10 +1,13 @@
-Leah CGM Display Firmware v0.8.0
+Leah CGM Display Firmware v0.10.2
 
 Changes:
-- First OTA update test structure.
-- Prepares firmware version checking.
-- Prepares web-based update notification.
-- Future support for user-confirmed firmware download and install.
+- Replaces the old alarm-limits OLED screen with a diagnostics screen.
+- OLED now has three screens:
+  1. Main glucose screen
+  2. 2-hour trend screen
+  3. Diagnostics / unit info screen
+- Diagnostics screen shows firmware version, build, hardware revision, product model, IP address, Wi-Fi RSSI, Nightscout status, and heap memory.
+- Keeps local webserver setup, OTA direction, password/security direction, name layout improvement, and OLED dimming direction.
 
 Important:
 This display is a secondary CGM awareness and alert companion.
