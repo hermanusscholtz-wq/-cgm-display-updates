@@ -1,14 +1,16 @@
-Leah CGM Display Firmware v0.10.4
+Leah CGM Display Firmware v0.10.10
 
 Changes:
-- Adds a small envelope/update notification icon next to the child/patient name on the main OLED display.
-- The envelope appears when a newer firmware version is available from the GitHub update manifest.
-- The envelope gently pulses to make the update noticeable without disturbing the glucose display.
-- The glucose value remains uncluttered and fully visible.
-- The local web dashboard now shows whether the main-screen update envelope is active.
-- Keeps local webserver screen-selection buttons from v0.10.3.
-- Keeps diagnostics screen, night dimming, OTA, and local configuration features from v0.10.x.
+- Changes the trend screen from 2 hours to 4 hours.
+- Requests up to 64 Nightscout entries and filters the plotted data to the last 4 hours.
+- Increases the trend payload read limit to 30000 bytes.
+- Optimises the top row so the Wi-Fi bars do not overlap the trend text.
+- Replaces the long "Now:" label with only the current glucose value.
+- Keeps active LOW/HIGH alarm-limit lines on the graph.
+- Keeps local time-in-range calculation from Nightscout entries.
+- Keeps night dimming, direct web screen links, update envelope, diagnostics, local setup, security direction, and OTA direction.
 
 Important:
+The time-in-range value is calculated locally from the Nightscout entries received by the device.
 This display is a secondary CGM awareness and alert companion.
 It is not intended to replace the primary CGM app, receiver, or approved medical device.
