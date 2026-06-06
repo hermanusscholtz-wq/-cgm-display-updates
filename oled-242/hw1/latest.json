@@ -2,12 +2,12 @@
   "product": "leah-cgm-display",
   "model": "oled-242",
   "hardware_rev": "hw1",
-  "latest_version": "0.10.6",
-  "build": 11,
+  "latest_version": "0.10.8",
+  "build": 13,
   "critical": false,
   "mandatory": false,
-  "release_notes": "Fixes OLED night dimming timing, applies dimming immediately after time sync, adds local time and dimming status to the web dashboard, and rechecks dimming every 5 seconds.",
-  "firmware_url": "https://github.com/hermanusscholtz-wq/cgm-display-updates/releases/download/v0.10.6/leah-cgm-display-oled-242-hw1-v0.10.6.bin",
-  "firmware_size": 1277696,
-  "sha256": "D69BC587053205528096AD584DADFE564F5CDA8D6BE06FB21D63C81E12EFBEE2"
+  "release_notes": "Revamps the 2-hour trend screen with active low/high alarm lines and locally calculated time-in-range percentage from Nightscout entries.",
+  "firmware_url": "https://github.com/hermanusscholtz-wq/cgm-display-updates/releases/download/v0.10.8/leah-cgm-display-oled-242-hw1-v0.10.8.bin",
+  "firmware_size": 1280064,
+  "sha256": "E8717C9D4257A39FADE1D5E84B64DD65CF3804E36736C395CF922B268C95600E"
 }
