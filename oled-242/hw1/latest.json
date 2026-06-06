@@ -1,0 +1,13 @@
+{
+  "product": "leah-cgm-display",
+  "model": "oled-242",
+  "hardware_rev": "hw1",
+  "latest_version": "0.8.0",
+  "build": 1,
+  "critical": false,
+  "mandatory": false,
+  "release_notes": "First OTA test version. Adds firmware version checking and prepares the unit for web-based updates.",
+  "firmware_url": "PASTE_GITHUB_RELEASE_FIRMWARE_URL_HERE",
+  "firmware_size": 0,
+  "sha256": "PASTE_SHA256_HASH_HERE"
+}
