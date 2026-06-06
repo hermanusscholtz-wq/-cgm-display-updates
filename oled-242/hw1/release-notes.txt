@@ -1,16 +1,16 @@
-Leah CGM Display Firmware v0.10.10
+Leah CGM Display Firmware v0.10.12
 
 Changes:
-- Changes the trend screen from 2 hours to 4 hours.
-- Requests up to 64 Nightscout entries and filters the plotted data to the last 4 hours.
-- Increases the trend payload read limit to 30000 bytes.
-- Optimises the top row so the Wi-Fi bars do not overlap the trend text.
-- Replaces the long "Now:" label with only the current glucose value.
-- Keeps active LOW/HIGH alarm-limit lines on the graph.
-- Keeps local time-in-range calculation from Nightscout entries.
+- Cleans up the 4-hour trend screen top row.
+- Removes current glucose value from the trend top row so Wi-Fi bars do not overlap text.
+- Keeps compact 4H and IN% labels only on the top row.
+- Keeps dynamic Y-axis scaling so high glucose values such as 18 mmol/L remain visible on the trend.
+- Keeps enlarged full-window trend graph from v0.10.11.
+- Keeps LOW/HIGH alarm-limit lines and time-in-range calculations.
 - Keeps night dimming, direct web screen links, update envelope, diagnostics, local setup, security direction, and OTA direction.
 
 Important:
+The trend Y-axis dynamically scales to the data received from Nightscout and the active alarm limits.
 The time-in-range value is calculated locally from the Nightscout entries received by the device.
 This display is a secondary CGM awareness and alert companion.
 It is not intended to replace the primary CGM app, receiver, or approved medical device.
