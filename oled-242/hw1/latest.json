@@ -2,12 +2,12 @@
   "product": "leah-cgm-display",
   "model": "oled-242",
   "hardware_rev": "hw1",
-  "latest_version": "0.10.12",
-  "build": 17,
+  "latest_version": "0.11.0",
+  "build": 18,
   "critical": false,
   "mandatory": false,
-  "release_notes": "Cleans up the 4-hour trend top row so Wi-Fi bars no longer overlap text, while keeping dynamic scaling for high glucose values and full-window plotting.",
-  "firmware_url": "https://github.com/hermanusscholtz-wq/cgm-display-updates/releases/download/v0.10.12/leah-cgm-display-oled-242-hw1-v0.10.12.bin",
-  "firmware_size": 1280144,
-  "sha256": "AED7816CE041D13F7B5BC3B798E5FB5C1575EE0A2C458A4519C44DEDD6C1F0DD"
+  "release_notes": "Adds optional UART external audio/Bluetooth module framework with web-configurable voice tracks, repeat intervals, volume settings, audio test buttons, and an Audio/Mute button screen.",
+  "firmware_url": "https://github.com/hermanusscholtz-wq/cgm-display-updates/releases/download/v0.11.0/leah-cgm-display-oled-242-hw1-v0.11.0.bin",
+  "firmware_size": 1298672,
+  "sha256": "4AEB7BA19CF3000511585FA1DCE8BCAC0CBF779B6BE450C8F4999900970DFFBC"
 }
