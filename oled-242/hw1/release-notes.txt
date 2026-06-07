@@ -1,16 +1,43 @@
-Leah CGM Display Firmware v0.10.12
+Leah CGM Display Firmware v0.11.0
 
 Changes:
-- Cleans up the 4-hour trend screen top row.
-- Removes current glucose value from the trend top row so Wi-Fi bars do not overlap text.
-- Keeps compact 4H and IN% labels only on the top row.
-- Keeps dynamic Y-axis scaling so high glucose values such as 18 mmol/L remain visible on the trend.
-- Keeps enlarged full-window trend graph from v0.10.11.
-- Keeps LOW/HIGH alarm-limit lines and time-in-range calculations.
-- Keeps night dimming, direct web screen links, update envelope, diagnostics, local setup, security direction, and OTA direction.
+- Adds optional UART external audio / Bluetooth module framework.
+- Designed for a DFR0782-style UART-controlled audio module.
+- Adds Audio / Bluetooth OLED screen.
+- Repurposes GPIO27 as AUDIO / MUTE button:
+  - Short press during alarm: mute/snooze audio/alarm.
+  - Short press without alarm: enable/disable optional audio module and show Audio screen.
+  - Long press: enable/disable optional audio module and show Audio screen.
+- Adds local webserver Audio / Bluetooth Alarm Module settings:
+  - Enable/disable audio module.
+  - UART baud rate.
+  - Normal and urgent volume.
+  - Voice track numbers for LOW, URGENT LOW, HIGH, URGENT HIGH, and NO DATA.
+  - Repeat interval minutes for each alarm type.
+- Adds webserver test buttons:
+  - Test LOW voice.
+  - Test URGENT LOW voice.
+  - Test HIGH voice.
+  - Test URGENT HIGH voice.
+  - Test NO DATA voice.
+  - Stop audio.
+- Adds non-blocking alarm voice repeat scheduler:
+  - LOW default every 5 min.
+  - URGENT LOW default every 2 min.
+  - HIGH default every 15 min.
+  - URGENT HIGH default every 5 min.
+  - NO DATA default every 10 min.
+- Keeps visual alarms active even when audio is disabled or unavailable.
+- Keeps v0.10.12 trend, OTA, webserver, diagnostics, dimming, and setup features.
+
+Bench-test note:
+This build sends generic UART text commands:
+  VOL:<volume>
+  PLAY:<track>
+  STOP
+When the DFR0782 arrives, confirm the module's exact UART command protocol and update sendAudioSetVolume(), sendAudioPlayTrack(), and sendAudioStop() if required.
 
 Important:
-The trend Y-axis dynamically scales to the data received from Nightscout and the active alarm limits.
-The time-in-range value is calculated locally from the Nightscout entries received by the device.
 This display is a secondary CGM awareness and alert companion.
 It is not intended to replace the primary CGM app, receiver, or approved medical device.
+Voice prompts must be treated as supportive guidance only.
