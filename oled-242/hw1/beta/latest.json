@@ -3,12 +3,12 @@
   "model": "oled-242",
   "hardware_rev": "hw1",
   "channel": "beta",
-  "latest_version": "0.11.3",
-  "build": 21,
+  "latest_version": "0.11.6",
+  "build": 24,
   "critical": false,
   "mandatory": false,
-  "release_notes": "Beta release adds Leah R2 Care Display startup identity and vision screens while keeping v0.11.2-beta release-channel and UART audio framework behavior.",
-  "firmware_url": "https://github.com/hermanusscholtz-wq/cgm-display-updates/releases/download/v0.11.3-beta/leah-cgm-display-oled-242-hw1-v0.11.3-beta.bin",
-  "firmware_size": 1308784,
-  "sha256": "356CC76D24DA07ADC18FD6D3174467A5057DD8BA9C9747984571B212EF9FC31A"
+  "release_notes": "Beta release adds webserver layout cleanup, English Female/Male voice selection, and Basic/Advanced web view while keeping Leah R2 startup and beta OTA behavior.",
+  "firmware_url": "https://github.com/hermanusscholtz-wq/cgm-display-updates/releases/download/v0.11.6-beta/leah-cgm-display-oled-242-hw1-v0.11.6-beta.bin",
+  "firmware_size": 1307680,
+  "sha256": "EACA0DA9CDA7A0818707DD51853E3E12690A106B9CCC06CBFE4771210B5E8F51"
 }
